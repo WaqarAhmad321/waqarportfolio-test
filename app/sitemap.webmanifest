@@ -1,0 +1,19 @@
+{
+  "name": "Waqar",
+  "short_name": "waqar",
+  "theme_color": "rgb(90,103,216)",
+  "icons": [
+    {
+      "src": "/app/opengraph-image-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/app/opengraph-image-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#F7FAFC",
+  "display": "standalone"
+}
