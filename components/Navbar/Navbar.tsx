@@ -63,9 +63,9 @@ const Navbar: FC = () => {
                   aria-label="navigation menu"
                 >
                   {isOpen ? (
-                    <RxCross1 className="text-white" />
+                    <RxCross1 className="dark:text-white" />
                   ) : (
-                    <RxHamburgerMenu className="text-white" />
+                    <RxHamburgerMenu className="dark:text-white" />
                   )}
                 </motion.button>
               </div>
