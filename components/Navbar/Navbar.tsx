@@ -29,8 +29,8 @@ const Navbar: FC = () => {
               </div>
             </div>
 
-            <div className="hidden md:block">
-              <div className="flex items-center gap-9">
+            <div className="">
+              <div className="md:flex hidden items-center gap-9">
                 <div className="ml-4 flex items-center gap-6 text-2xl">
                   <NavItems setIsOpen={setIsOpen} isOpen={isOpen} />
                 </div>

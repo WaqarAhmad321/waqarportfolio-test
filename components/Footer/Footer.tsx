@@ -5,21 +5,29 @@ import { ContactForm, ContactIcons } from "@/components";
 import { useTheme } from "next-themes";
 
 const Footer = () => {
-  const { theme, themes } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <footer className="text-heading-color dark:text-white md:w-full">
-      <Image
-        src={
-          theme === "dark"
-            ? "/layers.svg"
-            : "https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-images/wimwutqpbkjxt5r9l0nd"
-        }
-        width={1920}
-        height={1080}
-        alt="Waves Image"
-        className="h-56 md:h-96 md:w-full"
-      />
+      {theme === "dark" ? (
+        <Image
+          src="/layers.svg"
+          width={1920}
+          height={1080}
+          alt="Waves Image"
+          className="h-56 md:h-96 md:w-full"
+        />
+      ) : (
+        <Image
+          src={
+            "https://res.cloudinary.com/dkky0lrvb/image/upload/f_auto,q_auto/v1/portfolio-images/wimwutqpbkjxt5r9l0nd"
+          }
+          width={1920}
+          height={1080}
+          alt="Waves Image"
+          className="h-56 md:h-96 md:w-full"
+        />
+      )}
 
       <div
         id="footer"
