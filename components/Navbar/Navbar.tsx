@@ -16,7 +16,7 @@ const Navbar: FC = () => {
   const { setTheme, theme } = useTheme();
 
   return (
-    <header className={`sticky top-0 z-20 font-barlow text-gray-800`}>
+    <header className={`sticky top-0 z-20 font-barlow text-gray-800 ${barlow.className}`}>
       <nav className="bg-white dark:bg-[#161625]">
         <div
           className="mx-auto w-full px-4 sm:px-6 lg:px-8

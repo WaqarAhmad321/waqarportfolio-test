@@ -17,7 +17,7 @@ const allProjectsArray: ProjectType[] = [
 const allProjectsPage = () => {
   return (
     <section
-      className={`font-barlow mt-10 overflow-hidden will-change-transform md:will-change-auto`}
+      className={`font-barlow mt-10 overflow-hidden will-change-transform md:will-change-auto ${barlow.className}`}
     >
       <ProjectsTitle title="Projects I have worked on" />
       <div className="mt-24 md:mt-10">
