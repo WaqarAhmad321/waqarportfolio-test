@@ -39,7 +39,7 @@ const ContactForm = () => {
         name="senderName"
         required
         placeholder="Name"
-        className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem] dark:stroke-cherry dark:outline-cherry dark:border-slate-800"
+        className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem] dark:stroke-cherry dark:outline-cherry dark:border-slate-800 dark:bg-black"
         maxLength={50}
       />
       <input
@@ -47,14 +47,14 @@ const ContactForm = () => {
         name="senderEmail"
         placeholder="Email, So I can get back to you"
         required
-        className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem] dark:stroke-cherry dark:outline-cherry dark:border-slate-800"
+        className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem] dark:stroke-cherry dark:outline-cherry dark:border-slate-800 dark:bg-black"
         maxLength={50}
       />
       <textarea
         required
         name="message"
         placeholder="Message"
-        className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem] dark:stroke-cherry dark:outline-cherry dark:border-slate-800"
+        className="rounded-md border stroke-special p-2 outline-special lg:w-[35rem] dark:stroke-cherry dark:outline-cherry dark:border-slate-800 dark:bg-black"
         rows={5}
         maxLength={500}
       />
