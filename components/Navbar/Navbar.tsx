@@ -29,9 +29,9 @@ const Navbar: FC = () => {
               </div>
             </div>
 
-            <div className="">
-              <div className="md:flex hidden items-center gap-9">
-                <div className="ml-4 flex items-center gap-6 text-2xl">
+            <div className="flex gap-2">
+              <div className="flex items-center gap-9">
+                <div className="ml-4 hidden items-center gap-6 text-2xl md:flex">
                   <NavItems setIsOpen={setIsOpen} isOpen={isOpen} />
                 </div>
 
@@ -54,27 +54,27 @@ const Navbar: FC = () => {
                   )}
                 </motion.div>
               </div>
-            </div>
 
-            <div className="flex items-center text-2xl md:hidden">
-              <motion.button
-                className="inline-flex items-center justify-center p-2 will-change-transform md:will-change-auto"
-                onClick={() => setIsOpen((isOpen) => !isOpen)}
-                animate={{ rotate: isOpen ? 90 : 0 }}
-                aria-label="navigation menu"
-              >
-                {isOpen ? (
-                  <RxCross1 className="text-white" />
-                ) : (
-                  <RxHamburgerMenu className="text-white" />
-                )}
-              </motion.button>
+              <div className="flex items-center text-2xl md:hidden">
+                <motion.button
+                  className="inline-flex items-center justify-center p-2 will-change-transform md:will-change-auto"
+                  onClick={() => setIsOpen((isOpen) => !isOpen)}
+                  animate={{ rotate: isOpen ? 90 : 0 }}
+                  aria-label="navigation menu"
+                >
+                  {isOpen ? (
+                    <RxCross1 className="text-white" />
+                  ) : (
+                    <RxHamburgerMenu className="text-white" />
+                  )}
+                </motion.button>
+              </div>
             </div>
           </div>
 
           {isOpen && (
             <motion.div
-              className="fixed left-0 h-screen w-screen dark:bg-rich-black bg-white will-change-transform md:hidden md:will-change-auto"
+              className="fixed left-0 h-screen w-screen bg-white will-change-transform dark:bg-rich-black md:hidden md:will-change-auto"
               initial={{ opacity: 0, x: -100 }}
               animate={{ opacity: 1, x: 0 }}
             >

@@ -56,7 +56,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+      <ThemeProvider attribute="class" defaultTheme="dark" >
         <body className="bg-[#F7FAFC] antialiased dark:bg-rich-black">
           <NextTopLoader color="#2C73F8" showSpinner={false} />
           <Navbar />
